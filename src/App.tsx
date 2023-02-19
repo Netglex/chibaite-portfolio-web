@@ -6,7 +6,7 @@ export default function App() {
   const dark = useAppSelector(selectDark);
 
   return (
-    <div className={`min-h-screen ${dark ? "dark" : ""}`}>
+    <div className={`min-h-screen ${dark && "dark"}` }>
       <MainView />
     </div>
   );

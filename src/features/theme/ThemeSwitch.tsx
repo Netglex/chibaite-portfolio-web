@@ -9,7 +9,7 @@ export default function ThemeSwitch() {
   return (
     <div>
       <button className="border" onClick={(_) => dispatch(setDark(!dark))}>
-        {dark ? <RiSunLine /> : <RiMoonClearLine />}
+        {dark ? <RiMoonClearLine /> : <RiSunLine />}
       </button>
     </div>
   );
