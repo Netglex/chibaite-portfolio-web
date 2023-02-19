@@ -1,4 +1,4 @@
-export interface CardProps {
+interface PublicationCardProps {
   mediaSrc: string;
   title: JSX.Element;
   authors: JSX.Element;
@@ -6,7 +6,7 @@ export interface CardProps {
   links: JSX.Element;
 }
 
-export default function Card(props: CardProps) {
+export default function PublicationCard(props: PublicationCardProps) {
   return (
     <div className="bg-cyan-500 dark:bg-purple-300">
       <img className="w-48" src={props.mediaSrc} alt={props.mediaSrc} />

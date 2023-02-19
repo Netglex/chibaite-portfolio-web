@@ -1,4 +1,4 @@
-import Activities from "features/content/Activities";
+import Activities from "features/content/Activities/Activities";
 import Biography from "features/content/Biography";
 import Publications from "features/content/Publications/Publications";
 
