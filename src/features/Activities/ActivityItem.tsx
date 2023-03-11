@@ -5,7 +5,7 @@ interface ActivityItemProps {
 
 export default function ActivityItem(props: ActivityItemProps) {
   return (
-    <div className="flex">
+    <div className="flex gap-8 mb-1">
       <div>{props.date}</div>
       <div>{props.info}</div>
     </div>
