@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import Link from "common/Link";
 import ActivityItem from "./ActivityItem";
 
 export default function Activities() {
@@ -8,15 +8,15 @@ export default function Activities() {
       <h2>Reviewing</h2>
       <ActivityItem
         date="2022"
-        info={<a href="https://cvpr2022.thecvf.com/">CVPR</a>}
+        info={<Link href="https://cvpr2022.thecvf.com/">CVPR</Link>}
       />
       <ActivityItem
         date="2020"
         info={
-          <Fragment>
-            <a href="https://openeyes-workshop.github.io/">OpenEyes</a> workshop
-            at <a href="https://eccv2020.eu/">ECCV</a>
-          </Fragment>
+          <>
+            <Link href="https://openeyes-workshop.github.io/">OpenEyes</Link>{" "}
+            workshop at <Link href="https://eccv2020.eu/">ECCV</Link>
+          </>
         }
       />
     </section>

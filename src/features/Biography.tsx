@@ -1,39 +1,44 @@
-import ThemeSwitch from "features/theme/ThemeSwitch";
+import Link from "common/Link";
 
 export default function Biography() {
   return (
-    <section className="bg-blue-400 dark:bg-amber-500">
-      <ThemeSwitch />
-      <img className="w-48" src="YufengZheng.jpg" alt="Yufeng Zheng" />
-      <h1>PhD Student</h1>
-      <h2>
-        <a href="http://ait.inf.ethz.ch/">
-          Advanced Interactive Technologies Lab
-        </a>
-        , <a href="http://www.ethz.ch/">ETH Zürich</a>
-      </h2>
-      <div className="bg-yellow-300">
+    <section>
+      <div>
+        <img
+          className="aspect-square w-48 rounded-full object-cover"
+          src="YufengZheng.jpg"
+          alt="Yufeng Zheng"
+        />
+        <h1>PhD Student</h1>
+        <h2>
+          <Link href="http://ait.inf.ethz.ch/">
+            Advanced Interactive Technologies Lab
+          </Link>
+          , <Link href="http://www.ethz.ch/">ETH Zürich</Link>
+        </h2>
+      </div>
+      <div>
         <p className="mt-4 text-justify">
           I'm a doctoral candidate in the{" "}
-          <a href="https://learning-systems.org/">
+          <Link href="https://learning-systems.org/">
             Max Plank ETH Center for Learning Systems
-          </a>
-          , a joint program between <a href="http://www.ethz.ch/">ETH Zurich</a>{" "}
+          </Link>
+          , a joint program between <Link href="http://www.ethz.ch/">ETH Zurich</Link>{" "}
           and{" "}
-          <a href="https://www.is.mpg.de/">
+          <Link href="https://www.is.mpg.de/">
             Max Planck Institute for Intelligent Systems
-          </a>
+          </Link>
           . I am supervised by{" "}
-          <a href="https://ait.ethz.ch/people/hilliges/">
+          <Link href="https://ait.ethz.ch/people/hilliges/">
             Prof. Otmar Hilliges
-          </a>{" "}
-          and <a href="https://ps.is.mpg.de/~black">Prof. Michael Black</a>. I
+          </Link>{" "}
+          and <Link href="https://ps.is.mpg.de/~black">Prof. Michael Black</Link>. I
           currently work in{" "}
-          <a href="https://ps.is.mpg.de/">Perceiving Systems</a> at Max Planck
+          <Link href="https://ps.is.mpg.de/">Perceiving Systems</Link> at Max Planck
           Institute in Tuebingen. Prior to joining the CLS doctoral program, I
           obtained my Master's degree in Computer Science from ETH Zurich in
           2020 and my Bachelor's degree in Electronic Engineering from{" "}
-          <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a> in
+          <Link href="https://www.tsinghua.edu.cn/en/">Tsinghua University</Link> in
           2018.
         </p>
         <p className="mt-4 text-justify">

@@ -1,13 +1,17 @@
-import Activities from "features/content/Activities/Activities";
-import Biography from "features/content/Biography";
-import Publications from "features/content/Publications/Publications";
+import Navbar from "features/Navbar";
+import Activities from "features/Activities/Activities";
+import Biography from "features/Biography";
+import Publications from "features/Publications/Publications";
 
 export default function MainView() {
   return (
-    <main className="min-h-screen bg-red-300 dark:bg-lime-600">
-      <Biography />
-      <Publications />
-      <Activities />
-    </main>
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="m-0 overflow-hidden rounded-none bg-zinc-100 p-12 dark:bg-zinc-900 sm:m-12 sm:rounded-lg">
+        <Biography />
+        <Publications />
+        <Activities />
+      </main>
+    </div>
   );
 }
